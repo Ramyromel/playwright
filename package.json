@@ -76,7 +76,7 @@
     "@vitejs/plugin-basic-ssl": "^1.1.0",
     "@vitejs/plugin-react": "^4.2.1",
     "@zip.js/zip.js": "^2.7.29",
-    "chokidar": "^3.5.3",
+    "chokidar": "^4.0.0",
     "colors": "^1.4.0",
     "commonmark": "^0.30.0",
     "concurrently": "^6.2.1",
