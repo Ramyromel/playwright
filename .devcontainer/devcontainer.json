@@ -7,5 +7,10 @@
     },
     "runArgs": [
         "-v", "/var/run/docker.sock:/var/run/docker.sock"
-    ]
+    ],
+    "tasks": {
+      "test": "npm install && npm run test",
+      "build": "npm ci && npm run build",
+      "launch": "npm ci && npx playwright install && npm run build && npm run innerloop"
+    }
 }
