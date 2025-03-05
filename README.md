@@ -161,6 +161,30 @@ test('Intercept network requests', async ({ page }) => {
 });
 ```
 
+## Contribution Guidelines
+
+We welcome contributions to Playwright! If you're interested in contributing, please follow these guidelines:
+
+1. **Open an Issue**: Before starting any work, please open an issue to discuss the proposed changes. This helps us ensure that the changes align with the project's goals and avoid duplicate efforts.
+
+2. **Fork the Repository**: Fork the Playwright repository to your GitHub account and clone it to your local machine.
+
+3. **Install Dependencies**: Run `npm install` to install the necessary dependencies.
+
+4. **Make Changes**: Make your changes in a new branch. Ensure that your code follows the project's coding style and conventions.
+
+5. **Write Tests**: If your changes include new features or bug fixes, please write tests to cover the new functionality.
+
+6. **Run Tests**: Run the test suite to ensure that all tests pass. You can use `npm test` to run the tests.
+
+7. **Submit a Pull Request**: Once your changes are ready, submit a pull request to the main repository. Provide a clear description of the changes and reference any related issues.
+
+8. **Code Review**: Your pull request will be reviewed by the project maintainers. Be prepared to make any necessary changes based on feedback.
+
+9. **Merge**: Once your pull request is approved, it will be merged into the main repository.
+
+Thank you for contributing to Playwright!
+
 ## Resources
 
 * [Documentation](https://playwright.dev/docs/intro)

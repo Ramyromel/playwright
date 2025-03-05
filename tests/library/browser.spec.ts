@@ -62,3 +62,29 @@ test('should dispatch page.on(close) upon browser.close and reject evaluate', as
   const error = await promise;
   expect(error.message).toContain(kTargetClosedErrorMessage);
 });
+
+test('should handle browser disconnect', async ({ browserType, server }) => {
+  const browser = await browserType.launch();
+  const page = await browser.newPage();
+  await page.goto(server.EMPTY_PAGE);
+  const disconnected = new Promise(f => browser.once('disconnected', f));
+  await browser.close();
+  await disconnected;
+});
+
+test('should handle browser close', async ({ browserType, server }) => {
+  const browser = await browserType.launch();
+  const page = await browser.newPage();
+  await page.goto(server.EMPTY_PAGE);
+  await browser.close();
+  expect(browser.isConnected()).toBe(false);
+});
+
+test('should handle browser crash', async ({ browserType, server }) => {
+  const browser = await browserType.launch();
+  const page = await browser.newPage();
+  await page.goto(server.EMPTY_PAGE);
+  const crashed = new Promise(f => browser.once('disconnected', f));
+  await browser.close();
+  await crashed;
+});
