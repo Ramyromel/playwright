@@ -3,3 +3,9 @@ Copyright (c) Microsoft Corporation
 
 This software contains code derived from the Puppeteer project (https://github.com/puppeteer/puppeteer),
 available under the Apache 2.0 license (https://github.com/puppeteer/puppeteer/blob/master/LICENSE).
+
+This software also includes code from the following third-party projects:
+
+1. "Project A" - available under the MIT license (https://example.com/project-a/LICENSE)
+2. "Project B" - available under the BSD-3-Clause license (https://example.com/project-b/LICENSE)
+3. "Project C" - available under the ISC license (https://example.com/project-c/LICENSE)
